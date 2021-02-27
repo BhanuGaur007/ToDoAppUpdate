@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Login_Frgment"
+    android:background="#ffffff"
+    android:id="@+id/login_activity_screen">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:id="@+id/iv_top"
+        android:src="@drawable/ic_top_vector"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:paddingEnd="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:orientation="vertical"
+        android:layout_below="@id/iv_top"
+        android:layout_above="@id/iv_bottom">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:hint="User Name"
+            app:startIconDrawable="@drawable/ic_person">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/userName"
+                android:layout_height="match_parent"
+                android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:passwordToggleEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:hint="Password"
+            app:startIconDrawable="@drawable/ic_password">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/password"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="Forget Password"
+            android:layout_gravity="right"
+            android:elevation="0dp"
+            android:layout_margin="5dp"
+            android:id="@+id/forgetPass"
+            android:textColor="@color/black"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:background="@drawable/btn_rounded"
+            android:textColor="@color/white"
+            android:id="@+id/login_btn"
+            android:layout_marginBottom="5dp"/>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:background="#ffffff"
+            android:gravity="bottom"
+            >
+            <ImageButton
+                android:layout_weight="0.33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:id="@+id/facebook"
+                android:src="@drawable/ic_facebook"
+                android:background="#00000000"
+                android:layout_gravity="bottom"/>
+            <ImageButton
+                android:id="@+id/gmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_gmail"
+                android:background="#00000000"
+                android:layout_gravity="bottom"/>
+            <ImageButton
+                android:layout_weight="0.33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:id="@+id/twitter"
+                android:src="@drawable/ic_twitter"
+                android:background="#00000000"
+                android:layout_gravity="bottom"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_bottom"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_bottom_vector"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
+

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">To_Do_App_Final</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dialog_message">Add Your Task Name</string>
+    <string name="dialog_holder_name">Add Your Task Name</string>
+    <string name="dialog_title">Bhanu Gaur Alert Dialog</string>
+    <string name="error_email_exists">Email Already Exists</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyD4NwZWgTs_NezBtbPuap9r_i-r4jo70ok</string>
+
+
+</resources>
